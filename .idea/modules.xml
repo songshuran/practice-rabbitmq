@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/practice-rabbitmq.iml" filepath="$PROJECT_DIR$/.idea/practice-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/practice-rabbitmq-api/practice-rabbitmq-api.iml" filepath="$PROJECT_DIR$/practice-rabbitmq-api/practice-rabbitmq-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice-rabbitmq-spring/practice-rabbitmq-spring.iml" filepath="$PROJECT_DIR$/practice-rabbitmq-spring/practice-rabbitmq-spring.iml" />
     </modules>
   </component>
 </project>
