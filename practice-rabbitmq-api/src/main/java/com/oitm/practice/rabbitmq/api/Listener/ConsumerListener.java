@@ -1,4 +1,4 @@
-package com.oitm.practice.rabbitmq.api.exchange.fanout;
+package com.oitm.practice.rabbitmq.api.Listener;
 
 import com.oitm.practice.rabbitmq.api.common.ChannelFactory;
 import com.oitm.practice.rabbitmq.api.common.Constants;
@@ -10,31 +10,27 @@ import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
 /**
- * @Description: fanout类型的消费者
+ * @Description:
  * @Author: song_shu_ran
- * @Date: 2019-02-21 17:52
+ * @Date: 2019-02-24 13:48
  */
-public class ExchangeTypeFanoutConsumer {
+
+public class ConsumerListener {
     public static void main(String[] args) throws IOException, TimeoutException {
         Channel channel = ChannelFactory.createChannel();
-        String queueName = "fanout_queue";
 
-        // 交换机声明，具体参数含义查看文档基本都能看的明白
-        channel.exchangeDeclare(Constants.FANOUT_EXCHANGE_NAME, ExchangeType.FANOUT.getType(),
-                true, false, false, null);
-
-        // 队列声明
-        channel.queueDeclare(queueName, false, false, false, null);
-
-        // 绑定关系
-        channel.queueBind(queueName, Constants.FANOUT_EXCHANGE_NAME, "");
+        String queueName = "return_queue";
+        channel.exchangeDeclare(Constants.RETURN_EXCHANGE_NAME, ExchangeType.TOPIC.getType(), true, false, null);
+        channel.queueDeclare(queueName, true, false, false, null);
+        channel.queueBind(queueName, Constants.RETURN_EXCHANGE_NAME, Constants.RETURN_ROUTING_KEY);
 
         DeliverCallback deliverCallback = (consumerTag, delivery) -> {
             String message = new String(delivery.getBody(), "UTF-8");
             System.out.println(" Received'" + message + "'");
         };
-
         channel.basicConsume(queueName, true, deliverCallback, consumerTag -> {
+            System.out.printf("consumerTag : " + consumerTag);
         });
+
     }
 }

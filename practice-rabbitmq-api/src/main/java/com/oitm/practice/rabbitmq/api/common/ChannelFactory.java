@@ -14,31 +14,41 @@ import java.util.concurrent.TimeoutException;
  */
 public class ChannelFactory {
 
-	public static Channel channel;
-	public static Connection connection;
+    public static Channel channel;
+    public static Connection connection;
 
-	public static Channel createChannel() throws IOException, TimeoutException {
-		ConnectionFactory connectionFactory = new ConnectionFactory();
+    /**
+     * @Description: 获取channel对象
+     * @Param: []
+     * @Return: com.rabbitmq.client.Channel
+     */
+    public static Channel createChannel() throws IOException, TimeoutException {
+        ConnectionFactory connectionFactory = new ConnectionFactory();
 
-		connectionFactory.setHost("127.0.0.1");
-		connectionFactory.setPort(5672);
-		connectionFactory.setVirtualHost("/");
-		connectionFactory.setAutomaticRecoveryEnabled(true);
-		connectionFactory.setNetworkRecoveryInterval(3000);
+        connectionFactory.setHost("127.0.0.1");
+        connectionFactory.setPort(5672);
+        connectionFactory.setVirtualHost("/");
+        connectionFactory.setAutomaticRecoveryEnabled(true);
+        connectionFactory.setNetworkRecoveryInterval(3000);
 
-		connection = connectionFactory.newConnection();
-		channel = connection.createChannel();
+        connection = connectionFactory.newConnection();
+        channel = connection.createChannel();
 
-		return channel;
-	}
+        return channel;
+    }
 
-	public static void closeResource() throws IOException, TimeoutException {
-		if (channel!=null){
-			channel.close();
-		}
-		if (connection!=null){
-			connection.close();
-		}
-	}
+    /**
+     * @Description: 使用完毕后释放资源
+     * @Param: []
+     * @Return: void
+     */
+    public static void closeResource() throws IOException, TimeoutException {
+        if (channel != null) {
+            channel.close();
+        }
+        if (connection != null) {
+            connection.close();
+        }
+    }
 
 }
