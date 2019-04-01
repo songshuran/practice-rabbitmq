@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f1f2712-7160-4ac2-ace9-24865cb13651" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_2_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/RMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/adapter/MessageDelegate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/converter/ConverterBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/converter/ImageMessageConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/converter/PDFMessageConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/converter/TextMessageConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/entity/Packaged.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_5_4_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/main/java/com/oitm/rabbitmq/MainConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/main/java/com/oitm/rabbitmq/conusmer/RabbitReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/main/java/com/oitm/rabbitmq/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/MainConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/producer/RabbitSender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -28,6 +18,8 @@
     <ignored path="$PROJECT_DIR$/practice-rabbitmq-api/target/" />
     <ignored path="$PROJECT_DIR$/practice-rabbitmq-springboot/target/" />
     <ignored path="$PROJECT_DIR$/practice-rabbitmq-spring/target/" />
+    <ignored path="$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/target/" />
+    <ignored path="$PROJECT_DIR$/practice-rabbitmq-springboot-producer/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,72 +29,64 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/RMQConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="217" lean-forward="true" selection-start-line="217" selection-end-line="217" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/converter/ConverterBody.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/converter/ImageMessageConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/App.java">
+        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <caret line="10" lean-forward="true" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/entity/Packaged.java">
+        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/main/java/com/oitm/rabbitmq/MainConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="75">
+              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/converter/PDFMessageConverter.java">
+        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="270">
+              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/main/java/com/oitm/rabbitmq/conusmer/RabbitReceiver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/test/java/com/oitm/rabbitmq/ApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/main/java/com/oitm/rabbitmq/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/converter/TextMessageConverter.java">
+        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/producer/RabbitSender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="51" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="51" />
+            <state relative-caret-position="237">
+              <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,10 +95,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/test/java/com/oitm/rabbitmq/spring/AppTests.java">
+        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/entity/Order.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="215" column="70" selection-start-line="215" selection-start-column="70" selection-end-line="215" selection-end-column="70" />
+            <state relative-caret-position="375">
+              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/test/java/com/oitm/rabbitmq/ApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -134,6 +136,7 @@
       <find>RabbitListenerEndpoint</find>
       <find>endpoint</find>
       <find>converter</find>
+      <find>properties</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,6 +177,23 @@
         <option value="$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/converter/ImageMessageConverter.java" />
         <option value="$PROJECT_DIR$/practice-rabbitmq-spring/src/test/java/com/oitm/rabbitmq/spring/AppTests.java" />
         <option value="$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/converter/PDFMessageConverter.java" />
+        <option value="$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/practice-rabbitmq-springboot-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/producer/App.java" />
+        <option value="$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/producer/entity/Order.java" />
+        <option value="$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/producer/conusmer/RabbitReceiver.java" />
+        <option value="$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/main/java/com/oitm/rabbitmq/consumer/entity/Order.java" />
+        <option value="$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/producer/MainConfig.java" />
+        <option value="$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/RabbitSender.java" />
+        <option value="$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/test/java/com/oitm/rabbitmq/PracticeRabbitmqSpringbootProducerApplicationTests.java" />
+        <option value="$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/test/java/com/oitm/rabbitmq/PracticeRabbitmqSpringbootConsumerApplicationTests.java" />
+        <option value="$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/producer/RabbitSender.java" />
+        <option value="$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/main/java/com/oitm/rabbitmq/MainConfig.java" />
+        <option value="$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/MainConfig.java" />
+        <option value="$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/main/java/com/oitm/rabbitmq/conusmer/RabbitReceiver.java" />
+        <option value="$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/entity/Order.java" />
       </list>
     </option>
   </component>
@@ -214,60 +234,25 @@
             <path>
               <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-api" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-api" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -275,46 +260,26 @@
             <path>
               <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="adapter" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="conusmer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="converter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -322,14 +287,101 @@
             <path>
               <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-consumer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-producer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="producer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-producer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-producer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -337,17 +389,11 @@
             <path>
               <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
               <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-spring" type="462c0819:PsiDirectoryNode" />
+              <item name="practice-rabbitmq-springboot-producer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practice-rabbitmq" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="practice-rabbitmq-spring" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -363,7 +409,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554113490922" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554120118223" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -379,9 +425,13 @@
       <recent name="com.oitm.rabbitmq.spring.converter" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.oitm.rabbitmq.producer" />
+      <recent name="com.oitm.rabbitmq.producer.entity" />
+      <recent name="com.oitm.rabbitmq.producer.conusmer" />
       <recent name="com.oitm.rabbitmq.spring.adapter" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/main/java/com/oitm/rabbitmq/consumer" />
       <recent name="$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/converter" />
       <recent name="$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring" />
     </key>
@@ -398,55 +448,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AppTests.testSendMutlConverterMessage">
-    <configuration name="AppTests.testSendJavaMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="practice-rabbitmq-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.oitm.rabbitmq.spring.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.oitm.rabbitmq.spring" />
-      <option name="MAIN_CLASS_NAME" value="com.oitm.rabbitmq.spring.AppTests" />
-      <option name="METHOD_NAME" value="testSendJavaMessage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTests.testSendJsonMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="practice-rabbitmq-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.oitm.rabbitmq.spring.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.oitm.rabbitmq.spring" />
-      <option name="MAIN_CLASS_NAME" value="com.oitm.rabbitmq.spring.AppTests" />
-      <option name="METHOD_NAME" value="testSendJsonMessage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTests.testSendMappingMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="practice-rabbitmq-spring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.oitm.rabbitmq.spring.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.oitm.rabbitmq.spring" />
-      <option name="MAIN_CLASS_NAME" value="com.oitm.rabbitmq.spring.AppTests" />
-      <option name="METHOD_NAME" value="testSendMappingMessage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PracticeRabbitmqSpringbootProducerApplicationTests.testSender1">
     <configuration name="AppTests.testSendMutlConverterMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="practice-rabbitmq-spring" />
       <extension name="coverage">
@@ -459,6 +461,51 @@
       <option name="MAIN_CLASS_NAME" value="com.oitm.rabbitmq.spring.AppTests" />
       <option name="METHOD_NAME" value="testSendMutlConverterMessage" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationTests.testSender1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="practice-rabbitmq-springboot-producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oitm.rabbitmq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oitm.rabbitmq" />
+      <option name="MAIN_CLASS_NAME" value="com.oitm.rabbitmq.ApplicationTests" />
+      <option name="METHOD_NAME" value="testSender1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationTests.testSender2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="practice-rabbitmq-springboot-producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oitm.rabbitmq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.oitm.rabbitmq" />
+      <option name="MAIN_CLASS_NAME" value="com.oitm.rabbitmq.ApplicationTests" />
+      <option name="METHOD_NAME" value="testSender2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="practice-rabbitmq-springboot-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.oitm.rabbitmq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.oitm.rabbitmq.App" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -504,13 +551,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PracticeRabbitmqSpringbootConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="practice-rabbitmq-springboot-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.oitm.rabbitmq.consumer.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PracticeRabbitmqSpringbootProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="practice-rabbitmq-springboot-producer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.oitm.rabbitmq.producer.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PracticeRabbitmqSpringbootProducerApplicationTests.testSender1" />
+        <item itemvalue="JUnit.ApplicationTests.testSender2" />
+        <item itemvalue="Spring Boot.App (1)" />
         <item itemvalue="JUnit.AppTests.testSendMutlConverterMessage" />
         <item itemvalue="Spring Boot.App" />
-        <item itemvalue="JUnit.AppTests.testSendMappingMessage" />
-        <item itemvalue="JUnit.AppTests.testSendJavaMessage" />
-        <item itemvalue="JUnit.AppTests.testSendJsonMessage" />
       </list>
     </recent_temporary>
   </component>
@@ -533,44 +594,44 @@
       <workItem from="1551063016416" duration="22000" />
       <workItem from="1551086872015" duration="2530000" />
       <workItem from="1551142809576" duration="4194000" />
-      <workItem from="1554089346113" duration="16498000" />
+      <workItem from="1554089346113" duration="22317000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTests_testSendMessage2 - 2019.04.01 at 16h 48m 57s.xml">
-      <configuration name="AppTests.testSendMessage2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTests_testSendJsonMessage - 2019.04.01 at 17h 16m 08s.xml">
-      <configuration name="AppTests.testSendJsonMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTests_testSendJavaMessage - 2019.04.01 at 17h 20m 55s.xml">
-      <configuration name="AppTests.testSendJavaMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTests_testSendJavaMessage - 2019.04.01 at 17h 24m 57s.xml">
-      <configuration name="AppTests.testSendJavaMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTests_testSendJavaMessage - 2019.04.01 at 17h 25m 48s.xml">
-      <configuration name="AppTests.testSendJavaMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTests_testSendJavaMessage - 2019.04.01 at 17h 29m 35s.xml">
-      <configuration name="AppTests.testSendJavaMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTests_testSendMappingMessage - 2019.04.01 at 17h 36m 08s.xml">
-      <configuration name="AppTests.testSendMappingMessage" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppTests_testSendMutlConverterMessage - 2019.04.01 at 18h 00m 03s.xml">
+    <history-entry file="AppTests_testSendMutlConverterMessage - 2019.04.01 at 18h 11m 28s.xml">
       <configuration name="AppTests.testSendMutlConverterMessage" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTests_testSendMutlConverterMessage - 2019.04.01 at 18h 00m 53s.xml">
-      <configuration name="AppTests.testSendMutlConverterMessage" configurationId="JUnit" />
+    <history-entry file="PracticeRabbitmqSpringbootProducerApplicationTests_testSender1 - 2019.04.01 at 19h 24m 21s.xml">
+      <configuration name="PracticeRabbitmqSpringbootProducerApplicationTests.testSender1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTests_testSendMutlConverterMessage - 2019.04.01 at 18h 06m 53s.xml">
-      <configuration name="AppTests.testSendMutlConverterMessage" configurationId="JUnit" />
+    <history-entry file="PracticeRabbitmqSpringbootProducerApplicationTests_testSender1 - 2019.04.01 at 19h 26m 54s.xml">
+      <configuration name="PracticeRabbitmqSpringbootProducerApplicationTests.testSender1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PracticeRabbitmqSpringbootProducerApplicationTests_testSender1 - 2019.04.01 at 19h 29m 19s.xml">
+      <configuration name="PracticeRabbitmqSpringbootProducerApplicationTests.testSender1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PracticeRabbitmqSpringbootProducerApplicationTests_testSender1 - 2019.04.01 at 19h 30m 46s.xml">
+      <configuration name="PracticeRabbitmqSpringbootProducerApplicationTests.testSender1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PracticeRabbitmqSpringbootProducerApplicationTests_testSender1 - 2019.04.01 at 19h 37m 29s.xml">
+      <configuration name="PracticeRabbitmqSpringbootProducerApplicationTests.testSender1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApplicationTests_testSender2 - 2019.04.01 at 19h 56m 11s.xml">
+      <configuration name="ApplicationTests.testSender2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApplicationTests_testSender2 - 2019.04.01 at 19h 56m 29s.xml">
+      <configuration name="ApplicationTests.testSender2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApplicationTests_testSender2 - 2019.04.01 at 19h 57m 04s.xml">
+      <configuration name="ApplicationTests.testSender2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApplicationTests_testSender2 - 2019.04.01 at 20h 00m 18s.xml">
+      <configuration name="ApplicationTests.testSender2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54256000" />
+    <option name="totallyTimeSpent" value="60075000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -616,157 +677,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-api/src/main/java/com/oitm/practice/rabbitmq/api/exchange/fanout/ExchangeTypeFanoutConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="37" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-api/src/main/java/com/oitm/practice/rabbitmq/api/qos/QosProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot/src/main/java/com/oitm/practicerabbitmqspringboot/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-api/src/main/java/com/oitm/practice/rabbitmq/api/common/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-api/src/main/java/com/oitm/practice/rabbitmq/api/Listener/ProducerListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-api/src/main/java/com/oitm/practice/rabbitmq/api/Listener/ConsumerListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-api/src/main/java/com/oitm/practice/rabbitmq/api/exchange/topic/ExchangeTypeTopicConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-api/src/main/java/com/oitm/practice/rabbitmq/api/exchange/fanout/ExchangeTypeFanoutProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-api/src/main/java/com/oitm/practice/rabbitmq/api/exchange/topic/ExchangeTypeTopicProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-api/src/main/java/com/oitm/practice/rabbitmq/api/exchange/direct/ExchangeTypeDirectConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-api/src/main/java/com/oitm/practice/rabbitmq/api/exchange/direct/ExchangeTypeDirectProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-api/src/main/java/com/oitm/practice/rabbitmq/api/common/ChannelFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-api/src/main/java/com/oitm/practice/rabbitmq/api/qos/QosCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-api/src/main/java/com/oitm/practice/rabbitmq/api/acknowledge/AckProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-api/src/main/java/com/oitm/practice/rabbitmq/api/acknowledge/AckConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/practice-rabbitmq-spring.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -961,7 +871,7 @@
     <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -975,7 +885,7 @@
     <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/entity/Packaged.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -985,14 +895,31 @@
     <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/converter/ImageMessageConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="32" column="21" lean-forward="true" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/RMQConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="388">
-          <caret line="217" lean-forward="true" selection-start-line="217" selection-end-line="217" />
+          <caret line="217" selection-start-line="217" selection-end-line="217" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/converter/PDFMessageConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/converter/TextMessageConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1001,22 +928,120 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/test/java/com/oitm/rabbitmq/spring/AppTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="215" column="70" selection-start-line="215" selection-start-column="70" selection-end-line="215" selection-end-column="70" />
+        <state relative-caret-position="177">
+          <caret line="202" column="9" selection-start-line="202" selection-start-column="9" selection-end-line="202" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/converter/PDFMessageConverter.java">
+    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="66">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-spring/src/main/java/com/oitm/rabbitmq/spring/converter/TextMessageConverter.java">
+    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-producer/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="51" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="51" />
+        <state relative-caret-position="169">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/producer/conusmer/RabbitReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/main/java/com/oitm/rabbitmq/entity/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.1.5.RELEASE/spring-messaging-5.1.5.RELEASE.jar!/org/springframework/messaging/handler/annotation/Headers.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/MainConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" lean-forward="true" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/main/java/com/oitm/rabbitmq/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/test/java/com/oitm/rabbitmq/ApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/main/java/com/oitm/rabbitmq/MainConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/main/java/com/oitm/rabbitmq/conusmer/RabbitReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/src/test/java/com/oitm/rabbitmq/ApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/entity/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/practice-rabbitmq-springboot-producer/src/main/java/com/oitm/rabbitmq/producer/RabbitSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
