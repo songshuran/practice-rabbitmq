@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/practice-rabbitmq-spring/practice-rabbitmq-spring.iml" filepath="$PROJECT_DIR$/practice-rabbitmq-spring/practice-rabbitmq-spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/practice-rabbitmq-springboot-consumer.iml" filepath="$PROJECT_DIR$/practice-rabbitmq-springboot-consumer/practice-rabbitmq-springboot-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/practice-rabbitmq-springboot-producer/practice-rabbitmq-springboot-producer.iml" filepath="$PROJECT_DIR$/practice-rabbitmq-springboot-producer/practice-rabbitmq-springboot-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice-rabbitmq-springcloudstream-consumer/practice-rabbitmq-springcloudstream-consumer.iml" filepath="$PROJECT_DIR$/practice-rabbitmq-springcloudstream-consumer/practice-rabbitmq-springcloudstream-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice-rabbitmq-springcloudstream-producer/practice-rabbitmq-springcloudstream-producer.iml" filepath="$PROJECT_DIR$/practice-rabbitmq-springcloudstream-producer/practice-rabbitmq-springcloudstream-producer.iml" />
     </modules>
   </component>
 </project>
